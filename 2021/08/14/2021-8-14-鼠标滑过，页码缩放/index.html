@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021/8 | itSx</title>
+  <title>2021-8-14-鼠标滑过，页码缩放 | itSx</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="itSx">
-<meta property="og:url" content="http://example.com/archives/2021/08/index.html">
+  <meta name="description" content="页码缩放">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2021-8-14-鼠标滑过，页码缩放">
+<meta property="og:url" content="http://example.com/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/index.html">
 <meta property="og:site_name" content="itSx">
+<meta property="og:description" content="页码缩放">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/26829919-586a8a418d50ab3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/26829919-469d76c66f228a19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/26829919-5de59493504751b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="article:published_time" content="2021-08-14T12:55:20.000Z">
+<meta property="article:modified_time" content="2021-08-14T13:23:06.836Z">
 <meta property="article:author" content="it JinZhan">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/26829919-586a8a418d50ab3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="itSx" type="application/atom+xml">
   
@@ -241,129 +249,245 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-2021-8-14-鼠标滑过，页码缩放" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+    <h1 class="article-title" itemprop="name">
+      2021-8-14-鼠标滑过，页码缩放
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/" class="archive-article-date">
         <time datetime="2021-08-14T12:55:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-14</time>
 </a>
 
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">198字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="页码缩放"><a href="#页码缩放" class="headerlink" title="页码缩放"></a>页码缩放</h1><span id="more"></span>
+<h2 id="案例需求："><a href="#案例需求：" class="headerlink" title="案例需求："></a>案例需求：</h2><ul>
+<li>当鼠标经过，页码会放大，鼠标离开，页码恢复大小<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3></li>
+</ul>
+<ol>
+<li>css部分<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">        <span class="selector-tag">ul</span> &#123;</span><br><span class="line">            <span class="attribute">margin</span>: <span class="number">100px</span> auto;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="selector-tag">li</span> &#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">30px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">            <span class="attribute">border</span>: <span class="number">1px</span> solid skyblue;</span><br><span class="line">            <span class="attribute">text-align</span>: center;</span><br><span class="line">            <span class="attribute">line-height</span>: <span class="number">30px</span>;</span><br><span class="line">            <span class="attribute">list-style</span>: none;</span><br><span class="line">            <span class="attribute">float</span>: left;</span><br><span class="line">            <span class="attribute">border-radius</span>: <span class="number">15px</span>;</span><br><span class="line">            <span class="attribute">margin-right</span>: <span class="number">10px</span>;</span><br><span class="line">            <span class="comment">/* 鼠标变小手 */</span></span><br><span class="line">            <span class="attribute">cursor</span>: pointer;</span><br><span class="line">            <span class="comment">/* transition 过度 */</span></span><br><span class="line">            <span class="attribute">transition</span>: all .<span class="number">3</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="selector-tag">li</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">            <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.2</span>);</span><br><span class="line">        &#125;</span><br><span class="line"> ...</span><br></pre></td></tr></table></figure></li>
+<li>html部分 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>5<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>6<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>7<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>8<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="输出结果"><a href="#输出结果" class="headerlink" title="输出结果"></a>输出结果</h4><img src="https://upload-images.jianshu.io/upload_images/26829919-586a8a418d50ab3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"><br><img src="https://upload-images.jianshu.io/upload_images/26829919-469d76c66f228a19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="鼠标经过1变大.png"><br><img src="https://upload-images.jianshu.io/upload_images/26829919-5de59493504751b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="鼠标经过4变大.png"><h3 id="如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！"><a href="#如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！" class="headerlink" title="如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！"></a>如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！</h3></li>
+</ol>
+<hr>
+<h3 id="加油学，学不fei就继续，你fei了吗？-v"><a href="#加油学，学不fei就继续，你fei了吗？-v" class="headerlink" title="加油学，学不fei就继续，你fei了吗？^ v ^"></a>加油学，学不fei就继续，你fei了吗？^ v ^</h3>
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝奶茶<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/assets/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/assets/wexin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/" target="_blank">2021-8-14-鼠标滑过，页码缩放</a>
-  
-    </h1>
-  
+      </a>
+    </div>
+    
 
-
-        <div class="article-info info-on-right">
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          it JinZhan
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://example.com/2021/08/14/2021-8-14-鼠标滑过，页码缩放/" title="2021-8-14-鼠标滑过，页码缩放" target="_blank">http://example.com/2021/08/14/2021-8-14-鼠标滑过，页码缩放/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
-          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
 
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+
+    
+    
+    <div class="share-btn share-icons tooltip-left">
+        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+            <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+        </div>
+    </div>
+
+    <div class="page-modal wx-share js-wx-box">
+        <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+        <p>扫一扫，分享到微信</p>
+        <div class="wx-qrcode">
+            <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/" alt="微信分享二维码"> -->
+        </div>
+    </div>
+
+    <div class="mask js-mask"></div>
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/08/14/2021-8-14-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%83%AD%E7%82%B9%E5%9B%BE/" class="archive-article-date">
-        <time datetime="2021-08-14T09:30:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-14</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/08/14/2021-8-14-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%83%AD%E7%82%B9%E5%9B%BE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2021-8-14-原生代码实现热点图</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/08/14/2021-8-14-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%83%AD%E7%82%B9%E5%9B%BE/" target="_blank">2021-8-14-原生代码实现热点图</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE"><span class="toc-number">1.</span> <span class="toc-text">页码缩放</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B%E9%9C%80%E6%B1%82%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">案例需求：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B"><span class="toc-number">1.1.1.</span> <span class="toc-text">案例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">输出结果</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E5%AF%B9%E4%BD%A0%E6%9C%89%E6%89%80%E5%B8%AE%E5%8A%A9%EF%BC%8C%E6%AC%A2%E8%BF%8E%E7%82%B9%E8%B5%9E%E6%94%B6%E8%97%8F%E5%93%A6%EF%BC%8C%E5%85%B1%E5%90%8C%E8%BF%9B%E6%AD%A5%E5%93%A6%EF%BC%81%EF%BC%81"><span class="toc-number">1.1.2.</span> <span class="toc-text">如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E6%B2%B9%E5%AD%A6%EF%BC%8C%E5%AD%A6%E4%B8%8Dfei%E5%B0%B1%E7%BB%A7%E7%BB%AD%EF%BC%8C%E4%BD%A0fei%E4%BA%86%E5%90%97%EF%BC%9F-v"><span class="toc-number">1.1.3.</span> <span class="toc-text">加油学，学不fei就继续，你fei了吗？^ v ^</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/08/14/hello-world/" class="archive-article-date">
-        <time datetime="2021-08-14T06:26:29.899Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-14</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/08/14/hello-world/" target="_blank">Hello World</a>
-  
-    </h1>
-  
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
+
+
+
 
 
           </div>
@@ -410,8 +534,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

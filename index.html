@@ -248,6 +248,85 @@
             
 
   
+    <article id="post-2021-8-16-2D缩放——scale-方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/" target="_blank">2021-8-16-2D缩放——scale()方法</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/" class="archive-article-date">
+        <time datetime="2021-08-16T01:15:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-16</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="缩放——scale"><a href="#缩放——scale" class="headerlink" title="缩放——scale()"></a>缩放——scale()</h1><ul>
+<li>在CSS3中，我们可以使用transform属性的scale()方法来实现元素的缩放效果。缩放，指的是“缩小”和“放大”的意思。</li>
+<li>scale()方法跟translate()方法类似，缩放也有3种情况：scaleX()、scaleY()、scale()，参数x表示元素在x轴方向的缩放倍数，参数y表示元素在y轴方向的缩放倍数。</li></ul>
+    
+    <a class="article-more-a" href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2021-8-15-2D旋转" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -277,23 +356,11 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h2 id="旋转rotate"><a href="#旋转rotate" class="headerlink" title="旋转rotate()"></a>旋转rotate()</h2><ul>
-<li>旋转 <strong>rotate()函数</strong> 通过指定的角度参数使元素相对原点进行旋转。它主要在二维空间内进行操作，设置一个角度值，用来指定旋转的幅度。如果这个值为正值，元素相对原点中心顺时针旋转；如果这个值为负值，元素相对原点中心逆时针旋转。<h3 id="旋转方式"><a href="#旋转方式" class="headerlink" title="旋转方式"></a>旋转方式</h3></li>
-</ul>
-<ol>
-<li>顺时针旋转45度 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>); </span><br></pre></td></tr></table></figure></li>
-<li>案例<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"> <span class="selector-tag">img</span> &#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">            <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">            <span class="attribute">border</span>: <span class="number">5px</span> solid pink;</span><br><span class="line">            <span class="comment">/* 过渡写到本身上，谁做动画给谁加 */</span></span><br><span class="line">            <span class="attribute">transition</span>: all <span class="number">0.3s</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/* 鼠标经过的时候旋转 */</span></span><br><span class="line">        <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">            <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">360deg</span>);</span><br><span class="line">        &#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;-- 这里可以放入一张图片，或者一个有颜色的盒子，目的是为了看的更清晰 --&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;media/pic.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
-<li>输出结果</li>
-</ol>
-<ul>
-<li><p><img src="/2021/08/15/2021-8-15-2D%E6%97%8B%E8%BD%AC/1.png" alt="1.png"></p>
-</li>
-<li><p><img src="/2021/08/15/2021-8-15-2D%E6%97%8B%E8%BD%AC/2.png" alt="2.png"></p>
-</li>
-</ul>
-<h3 id="如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！"><a href="#如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！" class="headerlink" title="如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！"></a>如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！</h3><h3 id="加油学，学不fei就继续，你fei了吗？-v"><a href="#加油学，学不fei就继续，你fei了吗？-v" class="headerlink" title="加油学，学不fei就继续，你fei了吗？^ v ^"></a>加油学，学不fei就继续，你fei了吗？^ v ^</h3><p>[简书源] <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/5e268c6cbadf">https://www.jianshu.com/p/5e268c6cbadf</a></p>
-
+    <h1 id="旋转rotate"><a href="#旋转rotate" class="headerlink" title="旋转rotate()"></a>旋转rotate()</h1><ul>
+<li>旋转 <strong>rotate()函数</strong> 通过指定的角度参数使元素相对原点进行旋转。它主要在二维空间内进行操作，设置一个角度值，用来指定旋转的幅度。如果这个值为正值，元素相对原点中心顺时针旋转；如果这个值为负值，元素相对原点中心逆时针旋转。</li></ul>
+    
+    <a class="article-more-a" href="/2021/08/15/2021-8-15-2D%E6%97%8B%E8%BD%AC/#more">more >></a>
+    
     
 
     

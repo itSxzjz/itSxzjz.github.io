@@ -6,21 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>itSx</title>
+  <title>htmlWebpackPlugin-一个小bug的解决 | itSx</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="itSx">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="htmlWebpackPlugin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="htmlWebpackPlugin-一个小bug的解决">
+<meta property="og:url" content="http://example.com/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/index.html">
 <meta property="og:site_name" content="itSx">
+<meta property="og:description" content="htmlWebpackPlugin">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/htmlwebpackplugin.png">
+<meta property="article:published_time" content="2021-08-19T02:29:57.000Z">
+<meta property="article:modified_time" content="2021-08-19T02:39:43.045Z">
 <meta property="article:author" content="it JinZhan">
+<meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/htmlwebpackplugin.png">
   
     <link rel="alternative" href="/atom.xml" title="itSx" type="application/atom+xml">
   
@@ -245,25 +248,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-2021-8-19-一个小bug的解决" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-2021-8-19-一个小bug的解决" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/" target="_blank">htmlWebpackPlugin-一个小bug的解决</a>
-  
+    <h1 class="article-title" itemprop="name">
+      htmlWebpackPlugin-一个小bug的解决
     </h1>
   
 
 
   
   
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/" class="archive-article-date">
         <time datetime="2021-08-19T02:29:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-19</time>
 </a>
@@ -271,6 +274,27 @@
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">64字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -278,13 +302,67 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h1 id="htmlWebpackPlugin"><a href="#htmlWebpackPlugin" class="headerlink" title="htmlWebpackPlugin"></a>htmlWebpackPlugin</h1><p><img src="/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/htmlwebpackplugin.png" alt="htmlwebpackplugin.png"></p>
-    
-    <a class="article-more-a" href="/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/#more">more >></a>
-    
+<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TypeError: Cannot add property htmlWebpackPluginAlterChunks, object is not extensible at ......</span><br></pre></td></tr></table></figure>
+<h2 id="升级到最新版本即可解决"><a href="#升级到最新版本即可解决" class="headerlink" title="升级到最新版本即可解决"></a>升级到最新版本即可解决</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install html-webpack-plugin@latest -D</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！"><a href="#如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！" class="headerlink" title="如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！"></a>如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！</h3><h2 id="你会了吗？谢谢你请我喝奶茶，盒盒盒-↓↓↓"><a href="#你会了吗？谢谢你请我喝奶茶，盒盒盒-↓↓↓" class="headerlink" title="你会了吗？谢谢你请我喝奶茶，盒盒盒 ↓↓↓"></a>你会了吗？谢谢你请我喝奶茶，盒盒盒 ↓↓↓</h2>
     
 
     
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝奶茶<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/assets/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/assets/wexin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
 
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          it JinZhan
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://example.com/2021/08/19/2021-8-19-一个小bug的解决/" title="htmlWebpackPlugin-一个小bug的解决" target="_blank">http://example.com/2021/08/19/2021-8-19-一个小bug的解决/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
     
 
   </div>
@@ -305,16 +383,75 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/">展开全文 >></a>
-    </p>
-    
 
+    
+    
+    <div class="share-btn share-icons tooltip-left">
+        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+            <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+        </div>
+    </div>
+
+    <div class="page-modal wx-share js-wx-box">
+        <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+        <p>扫一扫，分享到微信</p>
+        <div class="wx-qrcode">
+            <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/08/19/2021-8-19-%E4%B8%80%E4%B8%AA%E5%B0%8Fbug%E7%9A%84%E8%A7%A3%E5%86%B3/" alt="微信分享二维码"> -->
+        </div>
+    </div>
+
+    <div class="mask js-mask"></div>
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2021-8-16-2D缩放——scale()方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -329,423 +466,33 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2021-8-16-2D缩放——scale-方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/" target="_blank">2021-8-16-2D缩放——scale()方法</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/" class="archive-article-date">
-        <time datetime="2021-08-16T01:15:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-16</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="缩放——scale"><a href="#缩放——scale" class="headerlink" title="缩放——scale()"></a>缩放——scale()</h1><ul>
-<li>在CSS3中，我们可以使用transform属性的scale()方法来实现元素的缩放效果。缩放，指的是“缩小”和“放大”的意思。</li>
-<li>scale()方法跟translate()方法类似，缩放也有3种情况：scaleX()、scaleY()、scale()，参数x表示元素在x轴方向的缩放倍数，参数y表示元素在y轴方向的缩放倍数。</li></ul>
-    
-    <a class="article-more-a" href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/08/16/2021-8-16-2D%E7%BC%A9%E6%94%BE%E2%80%94%E2%80%94scale-%E6%96%B9%E6%B3%95/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#htmlWebpackPlugin"><span class="toc-number">1.</span> <span class="toc-text">htmlWebpackPlugin</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E5%88%B0%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E5%8D%B3%E5%8F%AF%E8%A7%A3%E5%86%B3"><span class="toc-number">1.1.</span> <span class="toc-text">升级到最新版本即可解决</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E5%AF%B9%E4%BD%A0%E6%9C%89%E6%89%80%E5%B8%AE%E5%8A%A9%EF%BC%8C%E6%AC%A2%E8%BF%8E%E7%82%B9%E8%B5%9E%E6%94%B6%E8%97%8F%E5%93%A6%EF%BC%8C%E5%85%B1%E5%90%8C%E8%BF%9B%E6%AD%A5%E5%93%A6%EF%BC%81%EF%BC%81"><span class="toc-number">1.1.1.</span> <span class="toc-text">如果对你有所帮助，欢迎点赞收藏哦，共同进步哦！！</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E4%BC%9A%E4%BA%86%E5%90%97%EF%BC%9F%E8%B0%A2%E8%B0%A2%E4%BD%A0%E8%AF%B7%E6%88%91%E5%96%9D%E5%A5%B6%E8%8C%B6%EF%BC%8C%E7%9B%92%E7%9B%92%E7%9B%92-%E2%86%93%E2%86%93%E2%86%93"><span class="toc-number">1.2.</span> <span class="toc-text">你会了吗？谢谢你请我喝奶茶，盒盒盒 ↓↓↓</span></a></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
 
-  
-    <article id="post-2021-8-15-2D旋转" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/08/15/2021-8-15-2D%E6%97%8B%E8%BD%AC/" target="_blank">2021-8-15-2D旋转</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/08/15/2021-8-15-2D%E6%97%8B%E8%BD%AC/" class="archive-article-date">
-        <time datetime="2021-08-15T01:52:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="旋转rotate"><a href="#旋转rotate" class="headerlink" title="旋转rotate()"></a>旋转rotate()</h1><ul>
-<li>旋转 <strong>rotate()函数</strong> 通过指定的角度参数使元素相对原点进行旋转。它主要在二维空间内进行操作，设置一个角度值，用来指定旋转的幅度。如果这个值为正值，元素相对原点中心顺时针旋转；如果这个值为负值，元素相对原点中心逆时针旋转。</li></ul>
-    
-    <a class="article-more-a" href="/2021/08/15/2021-8-15-2D%E6%97%8B%E8%BD%AC/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/08/15/2021-8-15-2D%E6%97%8B%E8%BD%AC/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-2021-8-14-鼠标滑过，页码缩放" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/" target="_blank">2021-8-14-鼠标滑过，页码缩放</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/" class="archive-article-date">
-        <time datetime="2021-08-14T12:55:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="页码缩放"><a href="#页码缩放" class="headerlink" title="页码缩放"></a>页码缩放</h1>
-    
-    <a class="article-more-a" href="/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/08/14/2021-8-14-%E9%BC%A0%E6%A0%87%E6%BB%91%E8%BF%87%EF%BC%8C%E9%A1%B5%E7%A0%81%E7%BC%A9%E6%94%BE/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-2021-8-14-原生代码实现热点图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/08/14/2021-8-14-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%83%AD%E7%82%B9%E5%9B%BE/" target="_blank">2021-8-14-原生代码实现热点图</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/08/14/2021-8-14-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%83%AD%E7%82%B9%E5%9B%BE/" class="archive-article-date">
-        <time datetime="2021-08-14T09:30:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="什么是热点图"><a href="#什么是热点图" class="headerlink" title="什么是热点图?"></a>什么是热点图?</h1>
-    
-    <a class="article-more-a" href="/2021/08/14/2021-8-14-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%83%AD%E7%82%B9%E5%9B%BE/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/08/14/2021-8-14-%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%83%AD%E7%82%B9%E5%9B%BE/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/08/14/hello-world/" target="_blank">Hello World</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/08/14/hello-world/" class="archive-article-date">
-        <time datetime="2021-08-14T06:26:29.899Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/08/14/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -791,8 +538,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
